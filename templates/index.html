@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<title>Tech Master</title>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+				<div class="container">
+					<a class="navbar-brand col-9" href="#">
+						<img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+						Tech Master
+					</a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#about">Sobre</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#services">Serviços</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#prices">Preços</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Capa -->
+			<section class="d-flex flex-column parallax" style="background-image: url('../static/img/bg.jpg');">
+				<img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="250" height="250">
+				<h1>Tech Master</h1>
+			</section>
+
+			<!-- Quem somos -->
+			<section id="about" class="p-1" style="background-color: #F8F8F2;">
+				<div class="w-100 " style="max-width: 900px; margin: 0 auto; padding: 0 3px;">
+					<h2>Quem somos</h2>
+					<p>
+						A Tech Master é uma empresa comprometida com o ensino aprendizado de seus alunos, por isso, nossa
+						empresa conta com os melhores professores do mercado, profissionais com o comprometimento de passar
+						aos nossos alunos o melhor que o mercado oferece.
+					</p>
+
+					<p>
+						Você aprenderá a desenvolver jogos digitais do zero utilizando ferramentas Game Engine mais
+						utilizadas atualmente. Trabalho em equipe, disciplina, distribuição de responsabilidades e tudo que você
+						precisa dominar para ser um desenvolvedor de jogos digitais
+					</p>
+
+					<p>
+						Conheça nossa equipe de profissionais
+					</p>
+
+					<div class="row row-cols-1 row-cols-md-3 g-2 mt-3">
+						<div class="col">
+							<div class="card" style="height: 27rem;">
+								<img src="{{ url_for('static', filename='img/person01.jpg') }}" class="card-img-top" alt="Professor(a)">
+								<div class="card-body">
+									<h5 class="card-title">Albert Newton</h5>
+									<p class="card-text">
+										Doutor em engenharia de software, tenho 14 anos de experiência no mercado de
+										trabalho e atuo na área de jogos 3D a 7 anos.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="height: 27rem;">
+								<img src="{{ url_for('static', filename='img/person02.jpg') }}" class="card-img-top" alt="Professor(a)">
+								<div class="card-body">
+									<h5 class="card-title">Getúlio Vargas</h5>
+									<p class="card-text">
+										Formado no MTI, sou especialista e designe gráfico. Trabalho com jogos digitais a 13
+										anos e meio e amo minha área de atuação.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="height: 27rem;">
+								<img src="{{ url_for('static', filename='img/person03.jpg') }}" class="card-img-top" alt="Professor(a)">
+								<div class="card-body">
+									<h5 class="card-title">Mari Fernadez</h5>
+									<p class="card-text">
+										Me formei na PUC em engenharia da computação mas migrei para área de games a 10 anos
+										e nunca mais saí. Como todo dev, amo codar ouvindo música e tomando café.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Nosso serviço -->
+			<section class="d-flex flex-column align-items-start parallax"
+				style="background-image: url(../static/img/content01.png);">
+				<h1 class="m-1">Ative</h1>
+				<h1 class="m-1">o modo gamer</h1>
+				<h4 class="m-2 text-light">Conheça nossos serviços</h4>
+			</section>
+
+			<section id="services" class="p-1" style="background: #F8F8F2;">
+				<div class="w-100 " style="max-width: 950px; margin: 0 auto; padding: 0 0.5em;">
+					<h2>Nossos serviços</h2>
+					<p>
+						Preparamos os nosso alunos desde o básico ao avançado para que possam atuar com sucesso
+						na carreira de desenvolvedores de jogos digitais
+					</p>
+
+					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+								aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="{{ url_for('static', filename='img/service01.png') }}" class="d-block w-100" alt="Lógica de programação">
+							</div>
+							<div class="carousel-item">
+								<img src="{{ url_for('static', filename='img/service02.png') }}" class="d-block w-100" alt="Designe gráfico">
+							</div>
+							<div class="carousel-item">
+								<img src="{{ url_for('static', filename='img/service03.png') }}" class="d-block w-100" alt="Game engine">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+					<div class="card mt-5 mb-5">
+						<div class="card-header">
+							<h5>Oportunidade única</h5>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Imersão Game Engine</h5>
+							<p class="card-text">
+								Entre em contato agora com nossa equipe e aproveite a chance de se tornar o melhor
+								no ramo de desenvolvimento de jogos. Venha conhecer nossas ofertas e aproveite que
+								temos um preço imperdível para este mês de dezembro.
+								Clique no botão abaixo para entrar em contato conosco.
+							</p>
+							<a href="https://api.whatsapp.com/" target="_blank" class="btn text-light p-2"
+								style="border: none; border-radius: 10px; background: linear-gradient(to left, #9c82e4, #d462c3);">Go
+								somewhere</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="prices" class="d-flex flex-column align-items-center parallax"
+				style="background-image: url(../static/img/content02.png);">
+				<h1 class="m-1">Aproveite o melhor</h1>
+				<h1 class="m-1">preço do mercado</h1>
+			</section>
+
+			<section id="about" class="p-1" style="background-color: #F8F8F2;">
+				<div class="w-100 " style="max-width: 900px; margin: 0 auto; padding: 0 3px;">
+					<h2>Compare nossos planos de assinatura</h2>
+					<p>
+						Nossos valores estão alinhados com o mercado e oferecemos todo o suporte
+						que o aluno necessitar. Veja abaixo nossos preços e faça já sua assinatura.
+					</p>
+					<table class="table table-hover">
+						<thead class="text-light" style="background: linear-gradient(#b779e4, #415099);">
+							<tr>
+								<th scope="col">Plano</th>
+								<th scope="col">Valor</th>
+								<th scope="col">Desconto</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>6 meses de acesso</td>
+								<td>R$500,00</td>
+								<td>10%</td>
+							</tr>
+
+							<tr>
+								<td>1 ano de acesso</td>
+								<td>R$1000,00</td>
+								<td>25%</td>
+							</tr>
+
+							<tr>
+								<td>Assinatura vitalicia</td>
+								<td>R$2500,00</td>
+								<td>50%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<nav class="container-fluid -sm d-flex justify-content-center align-items-center bg-dark mt-5">
+				<div class="d-flex justify-content-center align-items-center flex-column text-light p-3">
+					<h5 class="text-muted">Todos os direitos reservados&copy;</h5>
+					<small>
+						<ul class="nav">
+							<li class="nav-link">
+								<a id="linkGit" href="https://github.com/joao-rod/tech-master/" target="_blank">
+									<i class="fab fa-github fa-2x "></i>
+								</a>
+							</li>
+							<li>
+								<small class="text-muted">
+									Clique no ícone para<br>
+									ver o projeto no GitHub
+								</small>
+							</li>
+						</ul>
+					</small>
+				</div>
+			</nav>
+		</footer>
+
+	</body>
+
+</html>
